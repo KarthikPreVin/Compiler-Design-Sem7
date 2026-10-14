@@ -94,7 +94,7 @@ bool_and {$$=$1;}
 bool_and : bool_and AND relation
 {
     char*t=newtemp();
-    printf("%d: %s=%s or %s\n",nextlabel++,t,$1,$3);
+    printf("%d: %s=%s and %s\n",nextlabel++,t,$1,$3);
     $$=t;
 }
 |
